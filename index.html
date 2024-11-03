@@ -8,6 +8,11 @@
         body {
             font-family: 'Arial', sans-serif;
             background-color: #c1e2be;
+            display: flex;
+            flex-direction: column;
+            min-width: 100vh;
+            margin: 0;
+            padding: 1%;
         }
         .left{
             text-align: left;
@@ -23,6 +28,48 @@
             font-size: calc(0.5rem + 1vw);
             color: black;
         }
+
+        .footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .table{
+            width: auto;
+            margin: 0 auto;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        .th{
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            font-family: monospace;
+            font-size: calc(0.5rem + 1vw);
+            color: #00695C;
+        }
+        
+        .tableDiv{
+            margin: 50px;
+        }
+
+
+        .linkTableRowImg img {
+            display: block;
+            margin: 0 auto; /* Center the image */
+        }
+
+        .linkTableRowText {
+            font-family: monospace;
+            text-align: center; /* Horizontally center the content */
+            font-size: calc(0.5rem + 1vw);
+            border-spacing: 10px;
+            border: 8px solid transparent;
+            padding: 0px;
+        }
+
     </style>
 
 </head>
@@ -55,9 +102,31 @@
 
      <!-- download links -->
     <div class="center">
-        <p class="officialFont"><!--from github--><a target="_self" href="https://github.com/sahariyarahamad/app-demo-download/releases/download/v.1.0.0-beta/Media.Caption.apk">GitHub</a></p>
+        
+        <table class="table">
+            <tr>
+                <td class="linkTableRowImg"><img alt="github icon" src="https://img.icons8.com/?size=24&id=16318&format=png" width="24" height="24" ></td>
+
+                <td class="linkTableRowText"><a target="_blank" href="https://github.com/sahariyarahamad/app-demo-download/releases">GitHub Website </a></td>
+                <td class="linkTableRowText"> or </td>
+                <td class="linkTableRowText"><a href="https://github.com/sahariyarahamad/app-demo-download/releases/download/v.1.0.0-beta/Media.Caption.apk"> GitHub Direc Download</a></td>
+            </tr>
+        </table>
     </div>
 
-    <!-- for footer and copy right-->
+
+    <!-- curent version name -->
+    <div class="tableDiv">
+        <table class="table">
+            <tr>
+                <th class="th">Current Version</th>
+                <th class="th">1.0.0-beta</th>
+            </tr>
+        </table>
+    </div>
+    
+
+
+
 </body>
 </html>
